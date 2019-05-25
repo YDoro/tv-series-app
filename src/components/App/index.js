@@ -1,5 +1,6 @@
 import React from 'react';
 import Intro from '../intro'
+import Series from '../../containers/Series'
 import './App.css';
 import 'whatwg-fetch';
 class App extends React.Component {
@@ -19,6 +20,7 @@ class App extends React.Component {
         </header>
         <Intro message='Here you can find all of your favorite series!' />
         The number of series on this site is: {this.state.series.length}
+        <Series/>
       </div >
     );
   }
